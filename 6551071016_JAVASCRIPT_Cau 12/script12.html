@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tinh gia tri b^n</title>
+    </head>
+    <body>
+        <p id="1"></p>
+        <script>
+            var b=prompt("Nhập phần hệ số: ");
+            var n=prompt("Nhập phần số mũ: ");
+            function luyThua(b, n){
+                var n=Math.pow(b, n);
+                return parseInt(n);
+            }
+            var result=luyThua(b, n);
+            //alert("b^n= "+result);
+            document.getElementById("1").innerHTML="b^n= "+result;//hàm thay đổi nội dung bên trong phần tử được chọn=id 
+        </script>
+    </body>
+</html>

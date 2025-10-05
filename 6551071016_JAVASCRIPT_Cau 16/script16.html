@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>cylindrical volume</title>
+    </head>
+    <body>
+        <script>
+            var hinhTru={
+                radius: 10,
+                height: 15,
+
+                theTich: function(){
+                    return Math.PI*Math.pow(this.radius, 2)*this.height;
+                },
+                dienTichToanPhan: function(){
+                    return 2*Math.PI*this.radius*(this.radius+this.height);
+                }
+            }
+
+            console.log("Thể tích của hình trụ ban đầu là: "+hinhTru.theTich().toFixed(2));
+            hinhTru.height=30;
+            console.log("Diện tích toàn phần của hình trụ sau khi cập nhật là: "+hinhTru.dienTichToanPhan().toFixed(2));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>reverse intergers</title>
+    </head>
+    <body>
+       <script>
+        var numbers=prompt("Nhập số nguyên: ");
+        function daoSo(numbers){
+            //to string: chuyển thành chuỗi, split: tách ra thành mảng, reverse: đảo, join: ghép lại thành số
+            var dao=numbers.toString().split('').reverse().join('');
+            return parseInt(dao);
+        }
+        var result=daoSo(numbers);
+        alert("số đảo ngược là:"+result);
+       </script>
+    </body>
+</html>

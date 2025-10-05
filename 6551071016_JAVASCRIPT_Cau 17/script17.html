@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>turn bin into dec</title>
+    </head>
+    <body>
+        <script>
+            var bin=prompt("Nhập số nhị phân: ");
+            var dec=0;
+
+            for (var i=0; i<bin.length; i++){
+                var bit=parseInt(bin[bin.length-1-i]);
+                dec+=bit*Math.pow(2, i);
+            }
+
+            alert(bin+"->"+dec)
+        </script>
+    </body>
+</html>
