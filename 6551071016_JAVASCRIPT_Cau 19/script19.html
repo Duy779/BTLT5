@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>interest rate</title>
+    </head>
+    <body>
+        <script>
+            var tienGoc=parseFloat(prompt("Nhập số tiền gốc: "));
+            var laiSuat=parseFloat(prompt("Nhập lãi suất hằng năm (%): "));
+            var soNam=parseInt(prompt("Nhập số năm gửi tiền: "));
+
+            var r=laiSuat/100;
+
+            var tongSoTien=tienGoc*Math.pow((1+r), soNam);
+
+            alert("Tổng số tiền sau "+soNam+" năm gửi là: "+tongSoTien+" VND");
+        </script>
+    </body>
+</html>
